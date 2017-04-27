@@ -107,7 +107,6 @@ def simulateDay():
     # ak presiel uz rok updatuje potrebnu tabulku a informuje
     if day == 365:
         ranking.update(2)
-        ranking.out()
         date += 1
         print("A year has passed.")
         print("Current date: 1.1.{:d}".format(date))
@@ -122,8 +121,7 @@ print("For easier beginning every team starts with only the points acquired duri
 print("You can either move on to the next day or see how the teams fare.")
 print("Enjoy.")
 # prednastavenie vstupu na testovanie
-com = "next"
-ranking.out()
+#com = "next"
 # hlavny cyklus
 while(True):
     # vzdy vypise moznosti
@@ -133,7 +131,7 @@ while(True):
     print("Write \'WCQ\' to see how the teams fare in the World Cup qualification.")
     print("Write \'Exit\' to exit this simulation. (Your progress won\'t be saved.)")
     # nacita vas vyber
-    #com = input("What do you do?")
+    com = input("What do you do?")
     # podla vasho vyberu reaguje
     # skonci
     if com.lower() == "exit": break
