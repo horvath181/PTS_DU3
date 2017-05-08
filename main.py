@@ -90,6 +90,7 @@ def getResult():
 
 # tahanie do skupin UEFA
 def draw(arr):
+    
     global uefaGroups
     unused = [i for i in range(52)]
     
@@ -105,6 +106,7 @@ def draw(arr):
 
 # podla datumu simuluje, co sa ma stat tento den
 def simulateDay():
+    
     global day, date, temp
     print("___________________________________________")
     
