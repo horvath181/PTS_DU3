@@ -8,6 +8,7 @@ from random import randint
 day = 1
 temp = True
 date = 2015
+
 # rozdelenie UEFA do skupin A - I
 uefaGroups = []
 
@@ -76,8 +77,10 @@ def getResult():
     
     # prida Rusko medzi kvalifikovanych
     res.append("Russia")
+    
     # spusti interkontinentalnu ligu
     final = matchSim.interCon(nextRound)
+    
     # prida 2 najlepsich
     res.append(final[0])
     res.append(final[1])
@@ -145,8 +148,10 @@ print("Enjoy.")
 
 # prednastavenie vstupu na testovanie
 com = "next"
+
 # hlavny cyklus
 while(True):
+    
     # vzdy vypise moznosti
     print("___________________________________________")
     print("Write \'Next\' to move on to another day.")
@@ -154,9 +159,8 @@ while(True):
     print("Write \'WCQ\' to see how the teams fare in the World Cup qualification.")
     print("Write \'Exit\' to exit this simulation. (Your progress won\'t be saved.)")
     
-    # nacita vas vyber
+    # nacita vas vyber, podla toho reaguje
     com = input("What do you do?")
-    # podla vasho vyberu reaguje
     
     # skonci
     if com.lower() == "exit": break
@@ -166,6 +170,7 @@ while(True):
     
     # World Cup Qualification
     elif com.lower() == "wcq":
+        
         # pomocna premenna aby som nemal dlhe riadky
         sc = "Which continental section do you want to see? (\'UEFA\', \'CAF\', "
         sc += "\'AFC\', \'OFC\', \'CONCACAF\', \'CONMEBOL\', \'All\')"
@@ -173,6 +178,7 @@ while(True):
         # ktory kontinent / vsetky
         com = input(sc)
         if com.lower() == "uefa":
+            
             # ak este neboli vylosovane skupiny len zobrazi timy
             if day==1:
                 print("UEFA Ranking:")
@@ -181,8 +187,10 @@ while(True):
             else:
                 sc = "How much info do you want? (group info: \'A\', "
                 sc += "\'B\', ..., \'I\' or \'All\')"
+                
                 # vyber si skupinu, alebo zobraz vsetko
                 com = input(sc)
+                
                 if com.lower() == "all":
                     print("UEFA Ranking:")
                     ranking.outMS(ranking.UEFA)
@@ -284,6 +292,7 @@ while(True):
     
     # ak sa uz dohrali vsetky zapasy
     if len(matchSim.arrMatches) == 0 and temp == False:
+        
         # poviem to
         print("This is the end of this simulation.")
         
@@ -294,6 +303,7 @@ while(True):
         # vypisem, kto vsetko sa kvalifikoval
         print("___________________________________________")
         print("Teams that are qualified for World Cup in Russia are:")
+        
         for x in arr:
             print(x)
         
