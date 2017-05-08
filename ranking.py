@@ -15,6 +15,7 @@ CONMEBOL = []
 
 # nacita a vytvori zakladne tabulky z ranking.csv
 def load():
+    
     global sortedRanking
     
     with open('ranking.csv', newline='') as csvfile:
@@ -37,6 +38,7 @@ def load():
 
 # Vypise FIFA World Ranking
 def out():
+    
     sortedRanking.sort(key=operator.itemgetter(2), reverse = True)
     print("FIFA World Ranking:")
     print("Rank {:<30s}{:>30s}".format("State","Points"))
@@ -49,6 +51,7 @@ def out():
 
 # Vypise tabulku arr vo formate MS
 def outMS(arr):
+    
     print("Rank {:<30s} {:>30s} {:s} {:s}   {:s}".format("State","Win","Draw","Lose",
         "Points"))
     counter = 1
@@ -62,6 +65,7 @@ def outMS(arr):
 
 #synchronizuje tabulku uefaGroups z mainu s tabulkou UEFA
 def synch(outArr, arr):
+    
     for x in outArr:
         for y in x:
             for i in range(len(arr)-1):
@@ -75,6 +79,7 @@ def synch(outArr, arr):
 
 # updatuje tabulky, t.j. usporiada podla prislusnych parametrov
 def update(temp):
+    
     global sortedRanking, UEFA, CAF, AFC, OFC, CONCACAF, CONMEBOL
     
     # uvodne nacitanie globalnych tabuliek
@@ -127,6 +132,7 @@ def update(temp):
 
 # update kazdej z tabuliek
 def check(arr):
+    
     arr.sort(key = operator.itemgetter(4, 5), reverse = True)
     
     for x in sortedRanking:
