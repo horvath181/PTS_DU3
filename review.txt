@@ -1,16 +1,23 @@
-main.py:	Funkcie ok, ale hlavný kód v maine môžeš trochu sprehladniť.
-			Hlavne pridanie prázdnych riadkov kvôli lepšej čitateľnosti,
-			miesta nehávam na teba.
+Review 1.:
 
-			Tiež zalomenie dlhých riadkov: 120, 143, 151, 224	
-			(stačí zátvorku pred print odsadiť tabulátorom
-			a potom ďalší riadok odsaďovať na tú istú úroveň)
+		main.py:	Funkcie ok, ale hlavný kód v maine môžeš trochu sprehladniť.
+					Hlavne pridanie prázdnych riadkov kvôli lepšej čitateľnosti,
+					miesta nehávam na teba.
 
-ranking.py:	Hodili by sa prázdne riadky pre lepšiu prehĺadnosť, najmä okolo výpisov.
-			Opäť zalomenie dlhých riadkov: 45, 50
+					Tiež zalomenie dlhých riadkov: 120, 143, 151, 224
+					(stačí zátvorku pred print odsadiť tabulátorom
+					a potom ďalší riadok odsaďovať na tú istú úroveň)
 
-matchSim.py:	Hodily by sa prázdne riadky na 145, 151 (+1, teda ak si pridal prvý),
-				163 (+2, ďalej ako keby bola zátvorka :) ), 179, 181, 206, 207, 221,
-				230, 232
+		ranking.py:	Hodili by sa prázdne riadky pre lepšiu prehĺadnosť, najmä okolo výpisov.
+					Opäť zalomenie dlhých riadkov: 45, 50
 
-				Ak je to možné, zalomiť 169 a 231
+		matchSim.py:	Hodily by sa prázdne riadky na 145, 151 (+1, teda ak si pridal prvý),
+						163 (+2, ďalej ako keby bola zátvorka :) ), 179, 181, 206, 207, 221,
+						230, 232
+
+						Ak je to možné, zalomiť 169 a 231
+
+Review 2.:
+
+		Nemám žiadne ďalšie výhrady, kód je pekne čitateľný
+		a prehľadný.
